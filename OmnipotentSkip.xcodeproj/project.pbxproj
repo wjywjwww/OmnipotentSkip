@@ -14,6 +14,17 @@
 		1B7914DA1E8DEF4800CB2B4C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B7914D81E8DEF4800CB2B4C /* LaunchScreen.storyboard */; };
 		1B7914E51E8DEF4800CB2B4C /* OmnipotentSkipTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7914E41E8DEF4800CB2B4C /* OmnipotentSkipTests.swift */; };
 		1B7914F01E8DEF4800CB2B4C /* OmnipotentSkipUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7914EF1E8DEF4800CB2B4C /* OmnipotentSkipUITests.swift */; };
+		1B7914FE1E8DF5D100CB2B4C /* WarmColorOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7914FD1E8DF5D100CB2B4C /* WarmColorOneViewController.swift */; };
+		1B7915001E8DF5E200CB2B4C /* WarmColorTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7914FF1E8DF5E200CB2B4C /* WarmColorTwoViewController.swift */; };
+		1B7915021E8DF61400CB2B4C /* DeadColorOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7915011E8DF61400CB2B4C /* DeadColorOneViewController.swift */; };
+		1B7915041E8DF62400CB2B4C /* DeadColorTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7915031E8DF62400CB2B4C /* DeadColorTwoViewController.swift */; };
+		1B7915071E8E27A200CB2B4C /* PushModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7915061E8E27A200CB2B4C /* PushModel.swift */; };
+		1B7915091E8E27AF00CB2B4C /* WarmOneDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7915081E8E27AF00CB2B4C /* WarmOneDataModel.swift */; };
+		1B79150B1E8E27B900CB2B4C /* WarmTwoDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B79150A1E8E27B900CB2B4C /* WarmTwoDataModel.swift */; };
+		1B79150D1E8E27C400CB2B4C /* DeadOneDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B79150C1E8E27C400CB2B4C /* DeadOneDataModel.swift */; };
+		1B79150F1E8E27CD00CB2B4C /* DeadTwoDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B79150E1E8E27CD00CB2B4C /* DeadTwoDataModel.swift */; };
+		1B7915121E8E458C00CB2B4C /* SwiftRunTimeTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7915111E8E458C00CB2B4C /* SwiftRunTimeTool.swift */; };
+		1B7915141E8E4B0600CB2B4C /* VCStoryboardIDList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1B7915131E8E4B0600CB2B4C /* VCStoryboardIDList.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +58,17 @@
 		1B7914EB1E8DEF4800CB2B4C /* OmnipotentSkipUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OmnipotentSkipUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B7914EF1E8DEF4800CB2B4C /* OmnipotentSkipUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OmnipotentSkipUITests.swift; sourceTree = "<group>"; };
 		1B7914F11E8DEF4800CB2B4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B7914FD1E8DF5D100CB2B4C /* WarmColorOneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WarmColorOneViewController.swift; sourceTree = "<group>"; };
+		1B7914FF1E8DF5E200CB2B4C /* WarmColorTwoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WarmColorTwoViewController.swift; sourceTree = "<group>"; };
+		1B7915011E8DF61400CB2B4C /* DeadColorOneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeadColorOneViewController.swift; sourceTree = "<group>"; };
+		1B7915031E8DF62400CB2B4C /* DeadColorTwoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeadColorTwoViewController.swift; sourceTree = "<group>"; };
+		1B7915061E8E27A200CB2B4C /* PushModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushModel.swift; sourceTree = "<group>"; };
+		1B7915081E8E27AF00CB2B4C /* WarmOneDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WarmOneDataModel.swift; sourceTree = "<group>"; };
+		1B79150A1E8E27B900CB2B4C /* WarmTwoDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WarmTwoDataModel.swift; sourceTree = "<group>"; };
+		1B79150C1E8E27C400CB2B4C /* DeadOneDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeadOneDataModel.swift; sourceTree = "<group>"; };
+		1B79150E1E8E27CD00CB2B4C /* DeadTwoDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeadTwoDataModel.swift; sourceTree = "<group>"; };
+		1B7915111E8E458C00CB2B4C /* SwiftRunTimeTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftRunTimeTool.swift; sourceTree = "<group>"; };
+		1B7915131E8E4B0600CB2B4C /* VCStoryboardIDList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = VCStoryboardIDList.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +119,15 @@
 		1B7914CE1E8DEF4800CB2B4C /* OmnipotentSkip */ = {
 			isa = PBXGroup;
 			children = (
+				1B7915051E8E278F00CB2B4C /* Model */,
+				1B7915101E8E456F00CB2B4C /* Tool */,
 				1B7914CF1E8DEF4800CB2B4C /* AppDelegate.swift */,
 				1B7914D11E8DEF4800CB2B4C /* ViewController.swift */,
+				1B7914FD1E8DF5D100CB2B4C /* WarmColorOneViewController.swift */,
+				1B7914FF1E8DF5E200CB2B4C /* WarmColorTwoViewController.swift */,
+				1B7915011E8DF61400CB2B4C /* DeadColorOneViewController.swift */,
+				1B7915031E8DF62400CB2B4C /* DeadColorTwoViewController.swift */,
+				1B7915131E8E4B0600CB2B4C /* VCStoryboardIDList.plist */,
 				1B7914D31E8DEF4800CB2B4C /* Main.storyboard */,
 				1B7914D61E8DEF4800CB2B4C /* Assets.xcassets */,
 				1B7914D81E8DEF4800CB2B4C /* LaunchScreen.storyboard */,
@@ -123,6 +152,26 @@
 				1B7914F11E8DEF4800CB2B4C /* Info.plist */,
 			);
 			path = OmnipotentSkipUITests;
+			sourceTree = "<group>";
+		};
+		1B7915051E8E278F00CB2B4C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1B7915061E8E27A200CB2B4C /* PushModel.swift */,
+				1B7915081E8E27AF00CB2B4C /* WarmOneDataModel.swift */,
+				1B79150A1E8E27B900CB2B4C /* WarmTwoDataModel.swift */,
+				1B79150C1E8E27C400CB2B4C /* DeadOneDataModel.swift */,
+				1B79150E1E8E27CD00CB2B4C /* DeadTwoDataModel.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		1B7915101E8E456F00CB2B4C /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				1B7915111E8E458C00CB2B4C /* SwiftRunTimeTool.swift */,
+			);
+			name = Tool;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,6 +285,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B7914DA1E8DEF4800CB2B4C /* LaunchScreen.storyboard in Resources */,
+				1B7915141E8E4B0600CB2B4C /* VCStoryboardIDList.plist in Resources */,
 				1B7914D71E8DEF4800CB2B4C /* Assets.xcassets in Resources */,
 				1B7914D51E8DEF4800CB2B4C /* Main.storyboard in Resources */,
 			);
@@ -262,7 +312,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B79150D1E8E27C400CB2B4C /* DeadOneDataModel.swift in Sources */,
+				1B79150B1E8E27B900CB2B4C /* WarmTwoDataModel.swift in Sources */,
+				1B7915071E8E27A200CB2B4C /* PushModel.swift in Sources */,
+				1B7915021E8DF61400CB2B4C /* DeadColorOneViewController.swift in Sources */,
+				1B7915121E8E458C00CB2B4C /* SwiftRunTimeTool.swift in Sources */,
+				1B7915001E8DF5E200CB2B4C /* WarmColorTwoViewController.swift in Sources */,
+				1B7914FE1E8DF5D100CB2B4C /* WarmColorOneViewController.swift in Sources */,
 				1B7914D21E8DEF4800CB2B4C /* ViewController.swift in Sources */,
+				1B7915091E8E27AF00CB2B4C /* WarmOneDataModel.swift in Sources */,
+				1B79150F1E8E27CD00CB2B4C /* DeadTwoDataModel.swift in Sources */,
+				1B7915041E8DF62400CB2B4C /* DeadColorTwoViewController.swift in Sources */,
 				1B7914D01E8DEF4800CB2B4C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

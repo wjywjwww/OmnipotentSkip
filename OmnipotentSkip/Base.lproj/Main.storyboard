@@ -1,14 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="uw6-eu-iJc">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--暖色One-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="warmOne" id="BYZ-38-t0r" customClass="WarmColorOneViewController" customModule="OmnipotentSkip" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +20,260 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ABd-5B-VJC">
+                                <rect key="frame" x="187" y="304" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S4J-Qh-NoA">
+                                <rect key="frame" x="187" y="364" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93333333330000001" green="0.68235294120000001" blue="0.63529411759999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="ABd-5B-VJC" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-30" id="22d-S5-rsp"/>
+                            <constraint firstItem="ABd-5B-VJC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Lgo-dB-e2d"/>
+                            <constraint firstItem="S4J-Qh-NoA" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="30" id="m0y-Ix-kXs"/>
+                            <constraint firstItem="S4J-Qh-NoA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uu1-CB-BHL"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="JAY-uP-wZB" appends="YES" id="jXr-Bw-jfr"/>
+                        </connections>
                     </view>
+                    <navigationItem key="navigationItem" title="暖色One" id="enL-MU-dt0"/>
+                    <connections>
+                        <outlet property="oneLabel" destination="ABd-5B-VJC" id="1pr-Jc-IGo"/>
+                        <outlet property="twoLabel" destination="S4J-Qh-NoA" id="Ng8-eK-Nve"/>
+                        <segue destination="Se2-YJ-qeu" kind="show" identifier="WarmOneToTwo" id="LLF-E3-vBG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="JAY-uP-wZB">
+                    <connections>
+                        <action selector="touchClick:" destination="BYZ-38-t0r" id="N9N-iY-gDF"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
+            <point key="canvasLocation" x="1994.4000000000001" y="122.78860569715144"/>
+        </scene>
+        <!--暖色Two-->
+        <scene sceneID="SQX-zg-eNm">
+            <objects>
+                <viewController storyboardIdentifier="warmTwo" id="Se2-YJ-qeu" customClass="WarmColorTwoViewController" customModule="OmnipotentSkip" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="UEn-ka-1UT"/>
+                        <viewControllerLayoutGuide type="bottom" id="3gz-5s-Jnx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2vl-8q-bzn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ePE-bO-bHM">
+                                <rect key="frame" x="187" y="303.5" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ai3-5d-ChA">
+                                <rect key="frame" x="187" y="363.5" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.74509803919999995" green="0.90980392160000001" blue="0.90588235289999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="Ai3-5d-ChA" firstAttribute="centerY" secondItem="2vl-8q-bzn" secondAttribute="centerY" constant="30" id="3kW-9P-zUQ"/>
+                            <constraint firstItem="ePE-bO-bHM" firstAttribute="centerY" secondItem="2vl-8q-bzn" secondAttribute="centerY" constant="-30" id="O6i-l5-WPD"/>
+                            <constraint firstItem="Ai3-5d-ChA" firstAttribute="centerX" secondItem="2vl-8q-bzn" secondAttribute="centerX" id="k96-9D-qUO"/>
+                            <constraint firstItem="ePE-bO-bHM" firstAttribute="centerX" secondItem="2vl-8q-bzn" secondAttribute="centerX" id="vmk-bN-mfM"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="HwZ-lx-d0g" appends="YES" id="S4x-xI-oyz"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" title="暖色Two" id="ihH-xM-C8g"/>
+                    <connections>
+                        <outlet property="oneLabel" destination="ePE-bO-bHM" id="JP4-k1-O1R"/>
+                        <outlet property="twoLabel" destination="Ai3-5d-ChA" id="a5z-DE-lZq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zwa-XH-10N" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="HwZ-lx-d0g">
+                    <connections>
+                        <action selector="touchClick:" destination="Se2-YJ-qeu" id="JKJ-Qb-hrU"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="2898" y="123"/>
+        </scene>
+        <!--暗色系Two-->
+        <scene sceneID="g64-4g-IfL">
+            <objects>
+                <viewController storyboardIdentifier="deadTwo" id="K26-U3-Dcn" customClass="DeadColorTwoViewController" customModule="OmnipotentSkip" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="suX-kj-geS"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ew8-w2-tyl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="u3V-Qk-1Dq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E4c-KU-qmF">
+                                <rect key="frame" x="187" y="303.5" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sac-xm-cyQ">
+                                <rect key="frame" x="187" y="363.5" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="sac-xm-cyQ" firstAttribute="centerY" secondItem="u3V-Qk-1Dq" secondAttribute="centerY" constant="30" id="1Vh-Hk-54Z"/>
+                            <constraint firstItem="E4c-KU-qmF" firstAttribute="centerX" secondItem="u3V-Qk-1Dq" secondAttribute="centerX" id="LgC-38-c62"/>
+                            <constraint firstItem="E4c-KU-qmF" firstAttribute="centerY" secondItem="u3V-Qk-1Dq" secondAttribute="centerY" constant="-30" id="rb8-DS-kXN"/>
+                            <constraint firstItem="sac-xm-cyQ" firstAttribute="centerX" secondItem="u3V-Qk-1Dq" secondAttribute="centerX" id="saa-zq-4MN"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="Mvd-eJ-uki" appends="YES" id="3aR-JS-gTr"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" title="暗色系Two" id="1Yd-P2-gx6"/>
+                    <connections>
+                        <outlet property="oneLabel" destination="E4c-KU-qmF" id="5ow-NR-g0P"/>
+                        <outlet property="twoLabel" destination="sac-xm-cyQ" id="GCz-Kp-QQO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FAJ-0Q-3Do" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Mvd-eJ-uki">
+                    <connections>
+                        <action selector="touchClick:" destination="K26-U3-Dcn" id="meK-Xw-F7U"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1992.8" y="903.59820089955031"/>
+        </scene>
+        <!--暗色One-->
+        <scene sceneID="jk2-ie-Yi3">
+            <objects>
+                <viewController storyboardIdentifier="deadOne" id="RC2-sv-8sx" customClass="DeadColorOneViewController" customModule="OmnipotentSkip" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Loh-Nc-1vK"/>
+                        <viewControllerLayoutGuide type="bottom" id="vPJ-1p-5Vy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mfx-BG-6Dh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="emN-FY-Heu">
+                                <rect key="frame" x="187" y="303.5" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2lL-Mr-CBB">
+                                <rect key="frame" x="187" y="363.5" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.80784313730000001" green="0.72941176470000002" blue="0.45098039220000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="emN-FY-Heu" firstAttribute="centerY" secondItem="mfx-BG-6Dh" secondAttribute="centerY" constant="-30" id="WUO-CO-snH"/>
+                            <constraint firstItem="emN-FY-Heu" firstAttribute="centerX" secondItem="mfx-BG-6Dh" secondAttribute="centerX" id="gjE-Wc-jUX"/>
+                            <constraint firstItem="2lL-Mr-CBB" firstAttribute="centerX" secondItem="mfx-BG-6Dh" secondAttribute="centerX" id="qyP-kb-pFx"/>
+                            <constraint firstItem="2lL-Mr-CBB" firstAttribute="centerY" secondItem="mfx-BG-6Dh" secondAttribute="centerY" constant="30" id="w03-bF-08V"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="5hx-tc-8gU" appends="YES" id="wZc-dR-Pgb"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" title="暗色One" id="orc-2k-x4o"/>
+                    <connections>
+                        <outlet property="oneLabel" destination="emN-FY-Heu" id="okZ-6H-nff"/>
+                        <outlet property="twoLabel" destination="2lL-Mr-CBB" id="yF8-yz-rg2"/>
+                        <segue destination="K26-U3-Dcn" kind="show" identifier="DeadOneToTwo" id="qxw-S1-aTp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4xs-P8-ztd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="5hx-tc-8gU">
+                    <connections>
+                        <action selector="touchClick:" destination="RC2-sv-8sx" id="ZZP-iv-Xsh"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1047" y="904"/>
+        </scene>
+        <!--亮色系-->
+        <scene sceneID="sOU-hB-RIu">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="kz1-fF-y4A" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="亮色系" id="Jdd-xl-8gd"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="90B-KN-I1n">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="jHK-ri-Bg6"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Y8-sd-mIK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.2" y="122.78860569715144"/>
+        </scene>
+        <!--暗色系-->
+        <scene sceneID="vp8-2Y-bcl">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="sYr-OZ-Vlw" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="暗色系" id="AsD-cL-Acf"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="sZ5-PB-5Xr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="RC2-sv-8sx" kind="relationship" relationship="rootViewController" id="wnd-YL-l3S"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nPO-oM-gAE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="108" y="904"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="aKS-gH-uHx">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="uw6-eu-iJc" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="cOf-eo-02F">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="kz1-fF-y4A" kind="relationship" relationship="viewControllers" id="yOF-LF-XRl"/>
+                        <segue destination="sYr-OZ-Vlw" kind="relationship" relationship="viewControllers" id="pgB-Va-JTd"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jjd-7U-dgv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="108" y="122.78860569715144"/>
         </scene>
     </scenes>
 </document>
