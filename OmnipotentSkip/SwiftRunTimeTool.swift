@@ -28,7 +28,7 @@ class SwiftRunTimeTool: NSObject {
         let ivars = class_copyIvarList(object, &count)
         for index in 0 ..< Int(count){
             let name = ivar_getName(ivars?[index])
-            if let ivarName = String.init(validatingUTF8: name!){
+            if let ivarName = String(validatingUTF8 : name!){
                 print("\(object) 变量名是：\(ivarName)")
             }
         }
@@ -42,7 +42,7 @@ class SwiftRunTimeTool: NSObject {
         let propertys = class_copyPropertyList(object, &count)
         for index in 0 ..< Int(count){
             let name = property_getName(propertys?[index])
-            if let propertyName = String.init(validatingUTF8: name!){
+            if let propertyName = String(validatingUTF8 : name!){
                 print("\(object) 属性名是：\(propertyName)")
             }
         }
@@ -56,7 +56,7 @@ class SwiftRunTimeTool: NSObject {
         let methods = class_copyMethodList(object, &count)
         for index in 0 ..< Int(count){
             let method = sel_getName(method_getName(methods?[index]))
-            if let methodName = String.init(validatingUTF8: method!){
+            if let methodName = String(validatingUTF8 : method!){
                 let argument = method_getNumberOfArguments(methods?[index])
                 print("\(object)的方法名:\(methodName)"+"参数个数:\(Int(argument))" )
             }
@@ -71,7 +71,7 @@ class SwiftRunTimeTool: NSObject {
         let protocols = class_copyProtocolList(object, &count)
         for index in 0 ..< Int(count){
             let protocolTemp = protocol_getName(protocols?[index])
-            if let protocolName = String.init(validatingUTF8: protocolTemp!){
+            if let protocolName = String(validatingUTF8 : protocolTemp!){
                 print("\(object)的遵循的代理:\(protocolName)")
             }
         }
@@ -102,7 +102,7 @@ class SwiftRunTimeTool: NSObject {
         let propertys = class_copyPropertyList(object, &count)
         for index in 0 ..< Int(count){
             let name = property_getName(propertys?[index])
-            if let propertyName = String.init(validatingUTF8: name!){
+            if let propertyName = String(validatingUTF8 : name!){
                 if propertyName == propertyStr{
                     return true
                 }
